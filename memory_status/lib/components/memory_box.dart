@@ -1,18 +1,23 @@
 import 'package:flutter/material.dart';
 
 class MemoryBox extends StatelessWidget {
+  MemoryBox({this.name, this.value, this.unit, this.imgUrl});
+  final name;
+  final value;
+  final unit;
+  final imgUrl;
+
   @override
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.fromLTRB(8.0, 16.0, 8.0, 8.0),
       child: Container(
         padding: EdgeInsets.all(8.0),
-        color: Colors.red,
         child: Column(
           children: [
             Row(
               children: [
-                Text('삼성전자 DDR4-2666 (4GB)'),
+                Text(name),
               ],
             ),
             SizedBox(height: 8.0),
@@ -20,19 +25,30 @@ class MemoryBox extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.end,
               children: [
                 Image.network(
-                  "http://img.danawa.com/prod_img/500000/268/380/img/6380268_1.jpg?shrink=500:500&_v=20200821132850",
+                  imgUrl,
                   scale: 5.0,
                 ),
                 Spacer(),
                 Row(
                   children: [
-                    Text('4,525원/1GB'),
+                    Text(unit),
                     SizedBox(width: 8),
-                    Text('가격: 19,590 원'),
+                    Text(value),
                   ],
                 ),
               ],
             ),
+          ],
+        ),
+        decoration: BoxDecoration(
+          color: Colors.white,
+          borderRadius: BorderRadius.circular(10.0),
+          boxShadow: [
+            BoxShadow(
+                color: Color(0xffe4e4f0), //black12
+                blurRadius: 10,
+                spreadRadius: 5,
+                offset: Offset(3, 3))
           ],
         ),
       ),
