@@ -3,6 +3,7 @@
 - **Week 1** - Setting Env  
 - **Week 2** - Create Memory Box
 - **Week 3** - Http request setting & Finish!
+- **Week 4** - Refresh & Animation Control
 
 ## What we learned
 #### Widget
@@ -12,7 +13,7 @@
 - **Column, Row**
 - **Expanded**
 - **FutureBuilder**
-- **ListView.builder**
+- **ListView**
 #### Service
 - **HTTP**
 - **Query**
