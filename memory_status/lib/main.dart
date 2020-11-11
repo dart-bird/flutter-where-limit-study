@@ -10,7 +10,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: '082메모리 현황',
+      debugShowCheckedModeBanner: false,
+      title: 'KOR Memory Status',
       home: HomeScreen(),
     );
   }

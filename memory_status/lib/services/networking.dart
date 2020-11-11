@@ -11,8 +11,6 @@ class NetworkHelper {
       if (response.statusCode == 200) {
         var jsonResponse = convert.jsonDecode(response.body);
         return jsonResponse;
-      } else {
-        print('Request failed with status: ${response.statusCode}.');
       }
     } catch (e) {
       return e.toString();
