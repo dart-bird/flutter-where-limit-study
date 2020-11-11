@@ -18,7 +18,7 @@
 - **Query**
 
 ## FrontEnd - Memory Status App
-![image](https://user-images.githubusercontent.com/51515055/98114545-bef67180-1ee8-11eb-80ad-5a7e85b3316b.png)
+![image](https://user-images.githubusercontent.com/51515055/98828427-6b050300-247b-11eb-9dde-e326108982bf.png)
 
 ## BackEnd - Python ( Flask )
 `GET` - `http://192.168.1.8:8888/danawa/products/memory`  
